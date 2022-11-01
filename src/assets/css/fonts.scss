@@ -67,3 +67,13 @@
         url("../fonts/Rajdhani-Bold.ttf") format("truetype");
     font-display: swap;
 }
+
+@font-face {
+    font-family: "GangwonEduSaeeum-Display";
+    font-weight: normal;
+    font-style: normal;
+    src: url("../fonts/GangwonEduSaeeumMedium.eot");
+    src: url("../fonts/GangwonEduSaeeumMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/GangwonEduSaeeumMedium.woff2") format("woff2"),
+        url("../fonts/GangwonEduSaeeumMedium.woff") format("woff"), url("../fonts/GangwonEduSaeeum.ttf") format("truetype");
+    font-display: swap;
+}
