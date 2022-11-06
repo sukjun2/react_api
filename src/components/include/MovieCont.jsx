@@ -4,7 +4,7 @@ const movieTitle = {
     title: "MOVIE",
 };
 const MovieCont = ({ movies }) => {
-    // console.log({ movies });
+    console.log({ movies });
     return (
         <section className="cont__movie">
             <div className="container">
