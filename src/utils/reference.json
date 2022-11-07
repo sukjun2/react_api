@@ -15,7 +15,7 @@
             "num": 2,
             "title": "align-content",
             "desc": "콘텐츠 사이와 콘텐츠 주위 빈 공간을 플렉스 박스'의 교차축 또는 그리드의 블록 축을 따라 배치하는 방식을 결정합니다.",
-            "descBasic": "align-content : start",
+            "descBasic": "alig                                              n-content : start",
             "descApply": "flexbox",
             "descVesrion": "CSS3",
             "descStar": "😀🤢🤢🤢🤢",
@@ -77,12 +77,12 @@
         {
             "num": 8,
             "title": "animation-direction",
-            "desc": "애니메이션 지연 시간을 설정합니다.",
+            "desc": "애니메이션 방향을 설정합니다.",
             "descBasic": "animation-direction : normal",
             "descApply": "animation",
             "descVesrion": "CSS3",
             "descStar": "😀😀😀🤢🤢",
-            "definition": ["애니메이션 지연 시간을 설정합니다.", "reverse, alternate, alternate-reverse 옵션을 지정할 수 있습니다."]
+            "definition": ["애니메이션 방향을 설정합니다.", "reverse, alternate, alternate-reverse 옵션을 지정할 수 있습니다."]
         },
         {
             "num": 9,

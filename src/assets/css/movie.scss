@@ -1,46 +1,146 @@
 .movie__inner {
-    font-family: "GangwonEduSaeeum-Display";
-    padding-bottom: 200px;
+    ul {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
 
-    h2 {
-        font-size: 60px;
+        li {
+            width: 23%;
+            position: relative;
+
+            em {
+                display: block;
+                height: 80px;
+                margin-bottom: 30px;
+                font-family: var(--font-sub2);
+            }
+            .title {
+                padding: 5px 0;
+                display: inline-block;
+            }
+            .star {
+                background: #fff;
+                color: #000;
+                position: absolute;
+                left: 20px;
+                top: 20px;
+                width: 30px;
+                height: 30px;
+                border-radius: 100px;
+                text-align: center;
+                line-height: 30px;
+                font-weight: 800;
+            }
+        }
+    }
+
+    a {
         color: var(--white);
     }
 }
 
+.movie__search {
+    margin-bottom: 100px;
+
+    .container {
+        position: relative;
+    }
+
+    h2 {
+        color: var(--white);
+        font-size: 40px;
+        text-indent: -9999px;
+        height: 0;
+    }
+    input {
+        background: #000;
+        border: 1px solid var(--white);
+        border-radius: 50px;
+        color: #fff;
+        width: 100%;
+        padding: 14px 30px;
+        font-family: var(--font-sub3);
+    }
+    button {
+        position: absolute;
+        right: 10px;
+        top: 6px;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 0;
+        font-family: var(--font-sub3);
+        cursor: pointer;
+        z-index: 1000;
+    }
+}
+
 .movie__list {
-    border: 1px solid var(--bg-dark-border);
-    font-size: 20px;
+    height: 470px;
+    overflow-y: hidden;
+    margin-bottom: 100px;
 
-    li {
-        border-bottom: 1px solid var(--bg-dark-border);
-        a {
+    h2 {
+        color: var(--white);
+        font-family: var(--font-sub2);
+        margin-bottom: 70px;
+    }
+
+    .list__inner {
+        ul {
             display: flex;
-            align-items: center;
-            width: 100%;
-            color: var(--white);
+            justify-content: space-between;
+            flex-wrap: nowrap;
 
-            span {
+            li {
                 display: inline-block;
-                padding: 15px 20px;
+                position: relative;
+                margin-left: 30px;
+
+                img {
+                    width: 210px;
+                    height: 300px;
+                }
+                em {
+                    display: block;
+                    height: 80px;
+                    margin-bottom: 30px;
+                    font-family: var(--font-sub2);
+                }
+                .title {
+                    padding: 5px 0;
+                    display: inline-block;
+                }
+                .star {
+                    background: #fff;
+                    color: #000;
+                    position: absolute;
+                    right: 10px;
+                    top: 10px;
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 100px;
+                    text-align: center;
+                    line-height: 30px;
+                    font-weight: 800;
+                }
+                .rank {
+                    color: yellow;
+                    position: absolute;
+                    font-size: 60px;
+                    left: -20px;
+                    top: -50px;
+                    font-family: var(--font-main);
+                    font-weight: 800;
+                }
             }
-            .num {
-                flex: 1 1 5%;
-                text-align: center;
-                border-right: 1px solid var(--bg-dark-border);
+            li:first-child {
+                margin-left: 10px;
             }
-            .name {
-                flex: 1 1 20%;
-                border-right: 1px solid var(--bg-dark-border);
-            }
-            .desc {
-                flex: 1 1 65%;
-                border-right: 1px solid var(--bg-dark-border);
-            }
-            .star {
-                flex: 1 1 10%;
-                text-align: center;
-            }
+        }
+
+        a {
+            color: var(--white);
         }
     }
 }
