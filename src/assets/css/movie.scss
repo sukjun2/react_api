@@ -7,7 +7,11 @@
         li {
             width: 23%;
             position: relative;
+            transition: all 0.3s ease-in-out;
 
+            &:hover {
+                transform: scale(1.05);
+            }
             em {
                 display: block;
                 height: 80px;
@@ -76,35 +80,34 @@
 }
 
 .movie__list {
-    height: 470px;
-    overflow-y: hidden;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 
     h2 {
         color: var(--white);
         font-family: var(--font-sub2);
-        margin-bottom: 70px;
+        margin-bottom: 30px;
     }
 
     .list__inner {
         ul {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: nowrap;
 
             li {
-                display: inline-block;
+                width: 100%;
                 position: relative;
-                margin-left: 30px;
+                padding: 10px 0;
+                transition: all 0.3s ease-in-out;
+
+                &:hover {
+                    transform: scale(1.05);
+                }
 
                 img {
                     width: 210px;
-                    height: 300px;
-                }
+                    height: 310px;
+            }
                 em {
                     display: block;
-                    height: 80px;
-                    margin-bottom: 30px;
+                    margin-bottom: 20px;
                     font-family: var(--font-sub2);
                 }
                 .title {
@@ -116,7 +119,7 @@
                     color: #000;
                     position: absolute;
                     right: 10px;
-                    top: 10px;
+                    top: 15px;
                     width: 30px;
                     height: 30px;
                     border-radius: 100px;
@@ -125,17 +128,22 @@
                     font-weight: 800;
                 }
                 .rank {
-                    color: yellow;
+                    background: repeating-linear-gradient(135deg, rgb(255, 221, 155) 0, rgb(254, 215, 146) 20px, rgb(255, 225, 172) 40px, rgb(255, 255, 255) 70px, rgb(250, 198, 107) 125px, rgb(246, 194, 107) 160px, rgb(231, 177, 85) 175px, rgb(244, 193, 107) 185px, rgb(241, 191, 107) 220px, rgb(243, 190, 102) 235px, rgb(233, 177, 83) 250px, rgb(245, 190, 97) 280px, rgb(249, 188, 86) 305px, rgb(255, 251, 245) 385px, rgb(252, 195, 98) 415px, rgb(252, 195, 121) 450px, rgb(255, 221, 155) 500px);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    background-repeat: repeat;
+                    background-attachment: fixed;
+                    backface-visibility: none;
+                    color: rgb(255, 221, 155);
+                    -webkit-text-fill-color: transparent;
+                    filter: drop-shadow(0 3px 1px #000);
                     position: absolute;
-                    font-size: 60px;
-                    left: -20px;
-                    top: -50px;
+                    font-size: 40px;
+                    left: 10px;
+                    top: 5px;
                     font-family: var(--font-main);
                     font-weight: 800;
                 }
-            }
-            li:first-child {
-                margin-left: 10px;
             }
         }
 
