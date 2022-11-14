@@ -22,13 +22,13 @@ const Youtube = () => {
     };
 
     useEffect(() => {
-        fetch("https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=webstoryboy&key=AIzaSyBenl9UdKbF06EZbQpp2Tn-mvbrj3jJvDo&maxResults=20&type=video")
+        fetch("https://sukjun2.github.io/react_api/src/utils/youtube.json")
             .then((response) => response.json())
             // .then((result) => console.log(result))
             .then((result) => setYoutubes(result.items))
             .catch((error) => console.log(error));
 
-        fetch("https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=webstoryboy&key=AIzaSyBenl9UdKbF06EZbQpp2Tn-mvbrj3jJvDo&maxResults=20&type=video")
+        fetch("https://sukjun2.github.io/react_api/src/utils/youtube.json")
             .then((response) => response.json())
             // .then((result) => console.log(result))
             .then((result) => setRandoms(result.items))
