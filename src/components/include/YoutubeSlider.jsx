@@ -16,10 +16,10 @@ function YoutubeRan({ randoms }) {
 }
 const YoutubeSlider = ({ randoms }) => {
     return (
-        <section className="movie__popular">
+        <section className="youtube__slider">
             <div className="container">
-                <div className="popular__inner">
-                    <h2>Youtube Ranking</h2>
+                <div className="youtube__slider__inner">
+                    <h2>Youtube Video</h2>
                     <Swiper
                         effect={"coverflow"}
                         autoplay={{
@@ -35,9 +35,9 @@ const YoutubeSlider = ({ randoms }) => {
                             stretch: 0,
                             depth: 100,
                             modifier: 1,
-                            slideShadows: true,
+                            slideShadows: false,
                         }}
-                        pagination={true}
+                        pagination={false}
                         modules={[EffectCoverflow, Pagination, Autoplay]}
                         className="mySwiper"
                     >

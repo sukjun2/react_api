@@ -23,6 +23,44 @@
                     -webkit-line-clamp: 1;
                     -webkit-box-orient: vertical;
                     color: #fff;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}
+
+.youtube__slider {
+    margin-bottom: 50px;
+
+    h2 {
+        color: var(--white);
+        font-family: var(--font-sub2);
+    }
+
+    .youtube__slider__inner {
+        .swiper {
+            width: 100%;
+            padding-top: 50px;
+        }
+
+        .swiper-slide {
+            background-position: center;
+            background-size: cover;
+            width: 35%;
+            margin-bottom: 30px;
+
+            li {
+                position: relative;
+                transition: all 0.3s ease-in-out;
+
+                &:hover {
+                    transform: scale(1.05);
+                }
+
+                .swiper-slide img {
+                    display: block;
+                    width: 100%;
                 }
             }
         }

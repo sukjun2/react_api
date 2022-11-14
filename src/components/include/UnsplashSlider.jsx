@@ -8,8 +8,8 @@ import { Autoplay, EffectCoverflow, Pagination } from "swiper";
 function UnsplashRan(props) {
     return (
         <li>
-            <a href={`https://api.unsplash.com/photos/random?${props.random.id}`} target="_blank" rel="noreferrer">
-                <img src={`https://api.unsplash.com/photos/random?${props.random.urls.regular}`} alt={props.random.alt_description} className="movie_img" />
+            <a href={`https://api.unsplash.com/photos/${props.random.id}`} target="_blank" rel="noreferrer">
+                <img src={`https://api.unsplash.com/photos/${props.random.urls.regular}`} alt={props.random.alt_description} className="movie_img" />
             </a>
         </li>
     );
