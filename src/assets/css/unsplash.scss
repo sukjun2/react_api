@@ -1,0 +1,20 @@
+.cont__unsplash {
+    ul {
+        column-count: 4;
+        column-gap: 20px;
+        width: 100%;
+
+        li {
+            margin-bottom: 20px;
+            transition: all 0.6s;
+
+            &:hover {
+                scale: 1.05;
+            }
+
+            img {
+                border-radius: 5px;
+            }
+        }
+    }
+}

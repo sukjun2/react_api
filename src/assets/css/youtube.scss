@@ -1,0 +1,30 @@
+.cont__youtube {
+    ul {
+        column-count: 4;
+        column-gap: 20px;
+        width: 100%;
+
+        li {
+            // margin-bottom: 20px;
+            transition: all 0.6s;
+
+            &:hover {
+                scale: 1.05;
+            }
+
+            img {
+                border-radius: 5px;
+            }
+            em {
+                span {
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 1;
+                    -webkit-box-orient: vertical;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
