@@ -23,13 +23,13 @@ const Unsplash = () => {
     };
 
     useEffect(() => {
-        fetch(`https://api.unsplash.com/photos/random?client_id=sf6Q68YlU2mVvJqWMapJjCgVSQShpVebqPohf5BOb08&query=seoul&count=20`)
+        fetch(`https://sukjun2.github.io/react_api/src/utils/unsplash.json`)
             .then((response) => response.json())
             // .then((result) => console.log(result))
             .then((result) => setImages(result))
             .catch((error) => console.log(error));
 
-        fetch("https://api.unsplash.com/photos/random?client_id=sf6Q68YlU2mVvJqWMapJjCgVSQShpVebqPohf5BOb08&count=10")
+        fetch("https://sukjun2.github.io/react_api/src/utils/unsplash.json")
             .then((response) => response.json())
             .then((result) => setRandom(result))
             .catch((error) => console.log(error));
@@ -42,7 +42,7 @@ const Unsplash = () => {
                 <Title title={["unsplash", "reference api"]} />
                 <UnsplashSlider random={random} />
                 <UnsplashSearch onSearch={search} />
-                <UnsplashBtn />
+                <UnsplashBtn onSearch={search} />
                 <UnsplashCont images={images} />
                 <Contact />
             </Contents>

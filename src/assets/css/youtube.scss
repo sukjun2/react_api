@@ -40,13 +40,14 @@
 
     .youtube__slider__inner {
         .swiper {
-            width: 100%;
+            width: 40%;
             padding-top: 50px;
         }
 
         .swiper-slide {
             background-position: center;
             background-size: cover;
+            border-radius: 20px;
             width: 35%;
             margin-bottom: 30px;
 

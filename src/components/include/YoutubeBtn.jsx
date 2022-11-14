@@ -1,6 +1,6 @@
 import React from "react";
 
-const UnsplashBtn = ({ onSearch }) => {
+const YoutubeBtn = ({ onSearch }) => {
     const onClick1 = () => {
         onSearch("dog");
     };
@@ -55,4 +55,4 @@ const UnsplashBtn = ({ onSearch }) => {
     );
 };
 
-export default UnsplashBtn;
+export default YoutubeBtn;

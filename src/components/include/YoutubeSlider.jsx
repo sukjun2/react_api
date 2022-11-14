@@ -1,9 +1,8 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import "swiper/css/effect-coverflow";
-import "swiper/css/pagination";
-import { Autoplay, EffectCoverflow, Pagination } from "swiper";
+import "swiper/css/effect-cards";
+import { Autoplay, EffectCards } from "swiper";
 
 function YoutubeRan({ randoms }) {
     return (
@@ -21,24 +20,13 @@ const YoutubeSlider = ({ randoms }) => {
                 <div className="youtube__slider__inner">
                     <h2>Youtube Video</h2>
                     <Swiper
-                        effect={"coverflow"}
                         autoplay={{
                             delay: 2500,
                             disableOnInteraction: false,
                         }}
-                        initialSlide="3"
+                        effect={"cards"}
                         grabCursor={true}
-                        centeredSlides={true}
-                        slidesPerView={"auto"}
-                        coverflowEffect={{
-                            rotate: 50,
-                            stretch: 0,
-                            depth: 100,
-                            modifier: 1,
-                            slideShadows: false,
-                        }}
-                        pagination={false}
-                        modules={[EffectCoverflow, Pagination, Autoplay]}
+                        modules={[Autoplay, EffectCards]}
                         className="mySwiper"
                     >
                         {randoms.map((randoms, index) =>

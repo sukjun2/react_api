@@ -6,6 +6,7 @@ import Footer from "../layout/Footer";
 import Title from "../layout/Title";
 import YoutubeSlider from "../include/YoutubeSlider";
 import YoutubeSearch from "../include/YoutubeSearch";
+import YoutubeBtn from "../include/YoutubeBtn";
 import YoutubeCont from "../include/YoutubeCont";
 import Contact from "../layout/Contact";
 
@@ -41,6 +42,7 @@ const Youtube = () => {
                 <Title title={["List of YouTube", "using API"]} />
                 <YoutubeSlider randoms={randoms} />
                 <YoutubeSearch onSearch={search} />
+                <YoutubeBtn onSearch={search} />
                 <YoutubeCont youtubes={youtubes} />
                 <Contact />
             </Contents>
