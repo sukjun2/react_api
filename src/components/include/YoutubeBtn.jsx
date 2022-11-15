@@ -2,25 +2,25 @@ import React from "react";
 
 const YoutubeBtn = ({ onSearch }) => {
     const onClick1 = () => {
-        onSearch("dog");
+        onSearch("javascript");
     };
     const onClick2 = () => {
-        onSearch("cat");
+        onSearch("html");
     };
     const onClick3 = () => {
-        onSearch("hamster");
+        onSearch("css");
     };
     const onClick4 = () => {
-        onSearch("rabbit");
+        onSearch("react");
     };
     const onClick5 = () => {
-        onSearch("tiger");
+        onSearch("vue");
     };
     const onClick6 = () => {
-        onSearch("fox");
+        onSearch("php");
     };
     const onClick7 = () => {
-        onSearch("lion");
+        onSearch("node");
     };
 
     return (
@@ -30,25 +30,25 @@ const YoutubeBtn = ({ onSearch }) => {
                     {/* {unsplashInfo.map((text, index) => (
             <UnsplashText key={index} text={text.text} />
           ))} */}
-                    spring
+                    javascript
                 </button>
                 <button type="submit" onClick={onClick2}>
-                    summer
+                    html
                 </button>
                 <button type="submit" onClick={onClick3}>
-                    hamster
+                    css
                 </button>
                 <button type="submit" onClick={onClick4}>
-                    rabbit
+                    react
                 </button>
                 <button type="submit" onClick={onClick5}>
-                    tiger
+                    vue
                 </button>
                 <button type="submit" onClick={onClick6}>
-                    fox
+                    php
                 </button>
                 <button type="submit" onClick={onClick7}>
-                    lion
+                    node
                 </button>
             </div>
         </div>

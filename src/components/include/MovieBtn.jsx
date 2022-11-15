@@ -1,26 +1,26 @@
 import React from "react";
 
-const UnsplashBtn = ({ onSearch }) => {
+const MovieBtn = ({ onSearch }) => {
     const onClick1 = () => {
-        onSearch("dog");
+        onSearch("marvel");
     };
     const onClick2 = () => {
-        onSearch("cat");
+        onSearch("disney");
     };
     const onClick3 = () => {
-        onSearch("hamster");
+        onSearch("dc");
     };
     const onClick4 = () => {
-        onSearch("rabbit");
+        onSearch("lego");
     };
     const onClick5 = () => {
-        onSearch("tiger");
+        onSearch("world");
     };
     const onClick6 = () => {
-        onSearch("fox");
+        onSearch("horror");
     };
     const onClick7 = () => {
-        onSearch("lion");
+        onSearch("action");
     };
 
     return (
@@ -30,29 +30,29 @@ const UnsplashBtn = ({ onSearch }) => {
                     {/* {unsplashInfo.map((text, index) => (
             <UnsplashText key={index} text={text.text} />
           ))} */}
-                    dog
+                    marvel
                 </button>
                 <button type="submit" onClick={onClick2}>
-                    cat
+                    disney
                 </button>
                 <button type="submit" onClick={onClick3}>
-                    hamster
+                    dc
                 </button>
                 <button type="submit" onClick={onClick4}>
-                    rabbit
+                    lego
                 </button>
                 <button type="submit" onClick={onClick5}>
-                    tiger
+                    world
                 </button>
                 <button type="submit" onClick={onClick6}>
-                    fox
+                    horror
                 </button>
                 <button type="submit" onClick={onClick7}>
-                    lion
+                    action
                 </button>
             </div>
         </div>
     );
 };
 
-export default UnsplashBtn;
+export default MovieBtn;

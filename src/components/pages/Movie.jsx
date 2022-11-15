@@ -8,6 +8,7 @@ import Footer from "../layout/Footer";
 
 import MovieList from "../include/MovieList";
 import MovieSearch from "../include/MovieSearch";
+import MovieBtn from "../include/MovieBtn";
 import MovieCont from "../include/MovieCont";
 
 const Movie = () => {
@@ -42,6 +43,7 @@ const Movie = () => {
                 <Title title={["movie", "reference api"]} />
                 <MovieList lists={lists} />
                 <MovieSearch onSearch={search} />
+                <MovieBtn onSearch={search} />
                 <MovieCont movies={movies} />
                 <Contact />
             </Contents>
