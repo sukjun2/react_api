@@ -1,0 +1,53 @@
+.about__inner {
+    width: 100%;
+  
+    .about__cont1 {
+      margin-bottom: 200px;
+  
+      img {
+        margin-bottom: 60px;
+      }
+      > div {
+        width: 60%;
+  
+        h4 {
+          margin-bottom: 25px;
+        }
+      }
+    }
+  
+    .about__cont2 {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 200px;
+  
+      img {
+        width: 60%;
+      }
+  
+      > div {
+        width: 38%;
+  
+        h4 {
+          margin-bottom: 25px;
+        }
+      }
+    }
+  
+    .about__cont3 {
+      display: flex;
+      justify-content: space-between;
+  
+      img {
+        width: 60%;
+      }
+  
+      > div {
+        width: 38%;
+  
+        h4 {
+          margin-bottom: 25px;
+        }
+      }
+    }
+  }
