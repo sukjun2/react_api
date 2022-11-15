@@ -25,7 +25,7 @@ const UnsplashList = (props) => {
                         spaceBetween={30}
                         centeredSlides={true}
                         pagination={{
-                          clickable: true,
+                            clickable: true,
                         }}
                         modules={[Autoplay, Pagination]}
                         className="mySwiper"

@@ -32,6 +32,12 @@
         .swiper {
             width: 100%;
             height: 500px;
+            border: 1px solid #FFF;
+
+            .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+                border-top: 1px solid #fff;
+                padding-top: 5px;
+            }
         }
 
         .swiper-slide {
