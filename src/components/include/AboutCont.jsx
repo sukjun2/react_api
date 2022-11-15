@@ -1,12 +1,16 @@
 import React from "react";
+import AboutImage1 from "../../assets/img/aboutImg03@3x.png"
+import AboutImage2 from "../../assets/img/aboutImg01@3x.jpg"
+import AboutImage3 from "../../assets/img/aboutImg02@3x.png"
 
 const AboutCont = () => {
     return (
-        <section class="cont__about">
-            <div class="container">
-                <div class="about__inner">
-                    <div class="about__cont1">
-                        <img src="../assets/img/aboutImg03@3x.png" alt="이미지1" />
+        <>
+        <section className="cont__about">
+            <div className="container">
+                <div className="about__inner">
+                    <div className="about__cont1">
+                        <img src={AboutImage1} alt="이미지1" />
                         <div>
                             <h4>꿈을 설계하고 디자인 하다.</h4>
                             <p>
@@ -16,8 +20,8 @@ const AboutCont = () => {
                             </p>
                         </div>
                     </div>
-                    <div class="about__cont2">
-                        <img src="../assets/img/aboutImg01@3x.jpg" alt="이미지2" />
+                    <div className="about__cont2">
+                        <img src={AboutImage2} alt="이미지2" />
                         <div>
                             <h4>열심히 할수록 기회는 따른다.</h4>
                             <p>
@@ -27,7 +31,7 @@ const AboutCont = () => {
                             </p>
                         </div>
                     </div>
-                    <div class="about__cont3">
+                    <div className="about__cont3">
                         <div>
                             <h4>나에게 정직하다.</h4>
                             <p>
@@ -35,11 +39,12 @@ const AboutCont = () => {
                                 삶을 더 즐길 줄 알게 된다. 다름 사람에게도 정직해야 하지만 그 무엇보다 나 자신한테 정직해야 한다.
                             </p>
                         </div>
-                        <img src="../assets/img/aboutImg02@3x.png" alt="이미지3" />
+                        <img src={AboutImage3} alt="이미지3" />
                     </div>
                 </div>
             </div>
         </section>
+        </>
     );
 };
 
