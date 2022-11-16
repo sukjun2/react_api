@@ -7,7 +7,7 @@ import { Autoplay, EffectCards } from "swiper";
 function YoutubeRan({ randoms }) {
     return (
         <li>
-            <a href={`https://www.youtube.com/watch?v=${randoms.id}`}>
+            <a href={`https://www.youtube.com/watch?v=${randoms.id.videoId}`}>
                 <img src={randoms.snippet.thumbnails.medium.url} alt={randoms.snippet.description} />
             </a>
         </li>
